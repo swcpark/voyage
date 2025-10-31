@@ -11931,4 +11931,167 @@ span {
   font-size: 14px;
   font-weight: 500;
   color: #7A7373;
+}
+
+/* GT Poster Section Styles */
+.gt-poster-section {
+  position: relative;
+  background: #ffffff;
+}
+
+.gt-poster-wrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gt-poster-wrapper:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.gt-poster-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.gt-poster-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gt-poster-wrapper:hover .gt-poster-image img {
+  transform: scale(1.05);
+}
+
+.gt-poster-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(21, 57, 238, 0.9) 0%, rgba(21, 57, 238, 0.7) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.gt-poster-wrapper:hover .gt-poster-overlay {
+  opacity: 1;
+}
+
+.gt-poster-content {
+  text-align: center;
+  color: var(--gt-white);
+  padding: 30px;
+}
+
+.gt-poster-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--gt-white);
+}
+
+.gt-poster-content p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.gt-poster-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 25px;
+  background: var(--gt-white);
+  color: var(--gt-theme);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gt-poster-download-btn:hover {
+  background: var(--gt-theme);
+  color: var(--gt-white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(21, 57, 238, 0.3);
+}
+
+.gt-poster-download-btn i {
+  font-size: 16px;
+}
+
+/* Responsive Design for Poster Section */
+@media (max-width: 991px) {
+  .gt-poster-content h3 {
+    font-size: 24px;
+  }
+  
+  .gt-poster-content p {
+    font-size: 14px;
+  }
+  
+  .gt-poster-download-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gt-poster-wrapper {
+    border-radius: 15px;
+  }
+  
+  .gt-poster-image {
+    border-radius: 15px;
+  }
+  
+  .gt-poster-overlay {
+    border-radius: 15px;
+  }
+  
+  .gt-poster-content {
+    padding: 20px;
+  }
+  
+  .gt-poster-content h3 {
+    font-size: 20px;
+  }
+  
+  .gt-poster-content p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  
+  .gt-poster-download-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .gt-poster-content h3 {
+    font-size: 18px;
+  }
+  
+  .gt-poster-content p {
+    font-size: 12px;
+  }
+  
+  .gt-poster-download-btn {
+    padding: 6px 14px;
+    font-size: 11px;
+  }
 }/*# sourceMappingURL=main.css.map */
